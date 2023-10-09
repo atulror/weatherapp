@@ -1,0 +1,141 @@
+#loader1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#loader1, #loader2, #loader3{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-top: 50px;
+}
+.up, .down{
+    height: 75px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one, .two, .three, .four{
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    border-radius: 50%;
+}
+.one{
+    background-color: #F63D3A;
+    position: relative;
+    animation: one 2s ease-in-out 0s infinite alternate;
+}
+.two{
+    background-color: #19A68C;
+    position: relative;
+    animation: two 2s ease-in-out 0s infinite alternate;
+}
+.three{
+    background-color: #FDA543;
+    position: relative;
+    animation: three 2s ease-in-out 0s infinite alternate;
+}
+.four{
+    background-color: #193B48;
+    position: relative;
+    animation: four 2s ease-in-out 0s infinite alternate;
+}
+
+@keyframes one {
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        left: 75px;
+        top: 0px;
+    }
+    50%{
+        left: 75px;
+        top: 75px;
+    }
+    75%{
+        top: 75px;
+        left: 0px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@keyframes two {
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        top: 75px;
+        left: 0px;
+    }
+    50%{
+        left: -75px;
+        top: 75px;
+    }
+    75%{
+        top: 0px;
+        left: -75px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@keyframes three {
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        left: 0px;
+        top: -75px;
+    }
+    50%{
+        left: 75px;
+        top: -75px;
+    }
+    75%{
+        top: 0px;
+        left: 75px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@keyframes four {
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        left: -75px;
+        top: 0px;
+    }
+    50%{
+        left: -75px;
+        top: -75px;
+    }
+    75%{
+        top: -75px;
+        left: 0px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}

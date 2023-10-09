@@ -1,0 +1,233 @@
+.icard {
+  width: 340px;
+  height: 650px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(14.5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  transition: transform 200ms ease;
+}
+.icard:hover {
+  transform: scale(1.05, 1.05);
+}
+.cards,
+.cards1 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.customM {
+  margin-top: 50px;
+}
+.customMargin {
+  margin-right: 50px;
+}
+.mobile {
+  display: flex;
+}
+.nextdays {
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 43px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .customMargin {
+    margin-right: 90px;
+  }
+  .customM {
+    margin-top: 5px;
+  }
+  .icard {
+    transform: scale(0.7, 0.7);
+  }
+  .cards1 {
+    margin-left: -40px;
+    margin-right: -5px;
+  }
+  .cards {
+    margin-left: -90px;
+    margin-right: -5px;
+  }
+  .icard:hover {
+    transform: scale(0.75, 0.75);
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .nextdays {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: -30px;
+  }
+  .display {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .customM {
+    margin-top: 5px;
+  }
+  .icard {
+    transform: scale(0.7, 0.7);
+  }
+  .cards1 {
+    margin-left: 20px;
+  }
+  .cards {
+    margin-left: 20px;
+  }
+  .icard:hover {
+    transform: scale(0.75, 0.75);
+  }
+  .fcard {
+    transform: scale(0.6, 0.6);
+  }
+  @keyframes myAnim {
+    0% {
+      transform: scale3d(0.6, 0.6, 0.6);
+    }
+
+    30% {
+      transform: scale3d(0.75, 0.25, 0.6);
+    }
+
+    40% {
+      transform: scale3d(0.25, 0.75, 0.6);
+    }
+
+    50% {
+      transform: scale3d(0.15, 0.55, 0.6);
+    }
+
+    65% {
+      transform: scale3d(0.55, 0.61, 0.6);
+    }
+
+    75% {
+      transform: scale3d(0.61, 0.55, 0.6);
+    }
+
+    100% {
+      transform: scale3d(0.6, 0.6, 0.6);
+    }
+  }
+}
+
+.imain {
+  position: "relative";
+  top: -50px;
+  margin-left: 10px;
+  padding: 5px;
+  padding-bottom: 55px;
+}
+
+.mainTemp {
+  font-size: 50px;
+  padding-top: 20px;
+}
+.topmost {
+  padding-left: 10px;
+}
+.dimmed {
+  font-size: 25px;
+  line-height: 15px;
+  opacity: 0.5;
+}
+.upperInfo {
+  position: relative;
+  top: 17px;
+  font-weight: 400;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.ringpos {
+  position: relative;
+  top: 55px;
+  height: fit-content;
+}
+.progress {
+  height: 140px;
+  width: 140px;
+  background-color: transparent;
+  display: grid;
+}
+.progresstext {
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  font-weight: 600;
+  right: 10px;
+  color: #87d6f8;
+}
+.progresstext1 {
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  color: #87d6f8;
+}
+
+.compassO {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #5ecbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.compassI {
+  height: 85%;
+  width: 85%;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.compass {
+  height: 12px;
+  width: 12px;
+  background-color: #002cf1;
+  position: relative;
+  border-radius: 50%;
+}
+.compassP1 {
+  transform: translate(0, -65px);
+}
+.compassP2 {
+  transform: translate(42px, -50px);
+}
+.compassP3 {
+  transform: translate(65px, 0);
+}
+.compassP4 {
+  transform: translate(42px, 50px);
+}
+.compassP5 {
+  transform: translate(0, 65px);
+}
+.compassP6 {
+  transform: translate(-50px, 42px);
+}
+.compassP7 {
+  transform: translate(-65px, 0);
+}
+.compassP8 {
+  transform: translate(-42px, -50px);
+}
+
+.ititle {
+  font-size: 30px;
+  font-weight: 500;
+}
