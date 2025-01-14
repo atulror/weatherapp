@@ -12,4 +12,4 @@ Things this application can do ===>
 6) Responsive Design
 
 
-Credits => Anshuman Singh
+Credits => Atul
